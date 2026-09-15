@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink - My Profile</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            🩸 LifeLink
+        </div>
+        <p class="college-name">
+    Alamuri Ratnamal Institute of Engineering and Technology
+    <br>
+    (ARMIET)
+</p>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="find-donor.html">Find Donor</a>
+            <a href="request-blood.html">Request Blood</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="profile.html">My Profile</a>
+        </div>
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </nav>
+
+
+    <!-- Profile Header -->
+    <section class="profile-header">
+
+        <div class="profile-icon">
+            👤
+        </div>
+
+        <h1>My Profile</h1>
+
+        <p>
+            Manage your LifeLink account details
+        </p>
+
+    </section>
+
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+
+        <div class="profile-card">
+
+            <div class="profile-top">
+
+                <div class="big-profile-icon">
+                    👤
+                </div>
+
+                <div>
+                    <h2 id="profileName">
+                        User Name
+                    </h2>
+
+                    <p id="profileType">
+                        LifeLink User
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- Details -->
+
+            <div class="profile-details">
+
+                <div class="detail-box">
+                    <span>📧</span>
+
+                    <div>
+                        <small>Email</small>
+                        <p id="profileEmail">-</p>
+                    </div>
+                </div>
+
+
+                <div class="detail-box">
+                    <span>📱</span>
+
+                    <div>
+                        <small>Mobile Number</small>
+                        <p id="profileMobile">-</p>
+                    </div>
+                </div>
+
+
+                <div class="detail-box blood-detail">
+                    <span>🩸</span>
+
+                    <div>
+                        <small>Blood Group</small>
+                        <p id="profileBloodGroup">-</p>
+                    </div>
+                </div>
+
+
+                <div class="detail-box">
+                    <span>📍</span>
+
+                    <div>
+                        <small>City / Location</small>
+                        <p id="profileLocation">-</p>
+                    </div>
+                </div>
+
+
+                <div class="detail-box">
+                    <span>👥</span>
+
+                    <div>
+                        <small>Account Type</small>
+                        <p id="profileUserType">-</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Action Buttons -->
+
+            <div class="profile-actions">
+
+    <button
+        class="edit-profile-btn"
+        onclick="editProfile()"
+    >
+        ✏️ Edit Profile
+    </button>
+
+    <a
+        href="donation-certificate.html"
+        class="certificate-btn"
+    >
+        🩸 Generate Donation Certificate
+    </a>
+
+    <button
+        class="delete-profile-btn"
+        onclick="deleteAccount()"
+    >
+        Delete Account
+    </button>
+
+</div>
+
+        </div>
+
+
+        <!-- College Information -->
+
+        <div class="college-card">
+
+            <div class="college-logo">
+                🎓
+            </div>
+
+            <div>
+                <h3>
+                    LifeLink Project
+                </h3>
+
+                <p>
+                    Alamuri Ratnamal Institute of Engineering
+                    and Technology (ARMIET)
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            🩸 <strong>LifeLink</strong>
+            — Connecting Donors. Saving Lives.
+        </p>
+
+        <p>
+            Alamuri Ratnamal Institute of Engineering and Technology (ARMIET)
+        </p>
+
+        <p>
+            © 2026 LifeLink. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="profile.js"></script>
+
+</body>
+</html>

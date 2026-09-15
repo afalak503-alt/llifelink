@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LifeLink - My Requests</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <div class="nav-logo">
+            🩸 LifeLink
+        </div>
+
+        <div class="nav-links">
+            <a href="home.html">Home</a>
+            <a href="find-donor.html">Find Donor</a>
+            <a href="request-blood.html">Request Blood</a>
+            <a href="emergency.html">Emergency</a>
+            <a href="requests.html">Requests</a>
+            <a href="profile.html">My Profile</a>
+        </div>
+
+        <button class="logout-btn" onclick="logout()">
+            Logout
+        </button>
+
+    </nav>
+
+
+    <!-- Header -->
+    <section class="page-header">
+
+        <h1>📋 My Requests</h1>
+
+        <p>
+            View and track your blood requests.
+        </p>
+
+    </section>
+
+
+    <!-- Requests -->
+    <section class="requests-section">
+
+        <div class="requests-container">
+
+            <!-- Normal Request -->
+            <div class="request-card">
+
+                <div class="request-card-header">
+
+                    <h2>🩸 Blood Request</h2>
+
+                    <span class="status pending">
+                        Pending
+                    </span>
+
+                </div>
+
+                <div class="request-details">
+
+                    <p>
+                        <strong>Patient:</strong>
+                        <span id="patientName">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Blood Group:</strong>
+                        <span id="bloodGroup">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Units:</strong>
+                        <span id="units">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Hospital:</strong>
+                        <span id="hospital">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        <span id="hospitalLocation">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Required Date:</strong>
+                        <span id="requiredDate">-</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Emergency Request -->
+            <div class="request-card emergency-request">
+
+                <div class="request-card-header">
+
+                    <h2>🚨 Emergency Request</h2>
+
+                    <span class="status emergency-status">
+                        Emergency
+                    </span>
+
+                </div>
+
+                <div class="request-details">
+
+                    <p>
+                        <strong>Patient:</strong>
+                        <span id="emergencyPatient">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Blood Group:</strong>
+                        <span id="emergencyBloodGroup">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Units:</strong>
+                        <span id="emergencyUnits">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Hospital:</strong>
+                        <span id="emergencyHospital">-</span>
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        <span id="emergencyLocation">-</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- Empty Message -->
+
+            <div
+                id="noRequests"
+                class="no-requests"
+            >
+                📭 No requests found.
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            🩸 <strong>LifeLink</strong>
+            — Connecting Donors. Saving Lives.
+        </p>
+
+        <p>
+            Alamuri Ratnamal Institute of Engineering
+            and Technology (ARMIET)
+        </p>
+
+        <p>
+            © 2026 LifeLink. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="requests.js"></script>
+
+</body>
+
+</html>

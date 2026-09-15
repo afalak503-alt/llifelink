@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="logo">🩸</div>
+            <h1>LifeLink</h1>
+            <h2>Connecting Donors.<br>Saving Lives.</h2>
+            <p>
+                Find blood donors quickly and help save lives.
+                Your one small step can make a big difference.
+            </p>
+        </div>
+
+        <!-- Login Section -->
+        <div class="login-section">
+            <div class="login-box">
+
+                <h2>Welcome Back!</h2>
+                <p class="subtitle">Login to your LifeLink account</p>
+
+                <form id="loginForm">
+
+                    <div class="input-group">
+                        <label>Email</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            placeholder="Enter your email"
+                            required
+                        >
+                    </div>
+
+                    <div class="input-group">
+                        <label>Password</label>
+                        <div class="password-box">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                placeholder="Enter your password"
+                                required
+                            >
+                            <button type="button" id="togglePassword">👁</button>
+                        </div>
+                    </div>
+
+                    <div class="options">
+                        <label>
+                            <input type="checkbox" id="remember">
+                            Remember me
+                        </label>
+
+                        <a href="#" id="forgotPassword">
+                            Forgot Password?
+                        </a>
+                    </div>
+
+                    <button type="submit" class="login-btn">
+                        Login
+                    </button>
+
+                </form>
+
+                <div class="divider">
+                    <span>OR</span>
+                </div>
+
+                <p class="register-text">
+                    Don't have an account?
+                    <a href="register.html">Create Account</a>
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
